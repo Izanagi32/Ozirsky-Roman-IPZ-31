@@ -23,3 +23,88 @@ body {
 .site-header{
     background-color: var(--main-bg);
 }
+
+.brand {
+    font-family: var(--secondary-font);
+    font-size: var(--logo-font-size);
+    font-weight: var(--logo-font-weight);
+    letter-spacing: var(--logo-letter-spacing);
+}
+
+.accent {
+    color: var(--support-color);
+}
+
+.brand:hover,
+.brand:focus {
+    color: black;
+    color: pointer;
+}
+
+.contact-link {
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.acrive-link {
+    color: var(--support-color);
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 300ms;
+    line-height: inherit;
+    font-size: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 300ms;
+    cursor: pointer;
+    line-height: inherit;
+    font-size: inherit;
+}
+
+a:hover,
+a:focus {
+    color: var(--support-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.site-footer {
+    background-color: #2f303a;
+}
+
+.logo-footer {
+    color: #ffffff;
+}
+
+.logo-footer:hover {
+    color: #ffffff;
+}
+
+address {
+    text-decoration: none;
+}
+
+.address-link {
+    color: rqba(255, 255, 255, 0.6);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+}
+
+.address-map {
+    color: #ffffff;
+}
