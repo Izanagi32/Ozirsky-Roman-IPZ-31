@@ -1,0 +1,25 @@
+:root {
+    --main-bg: #ffffff;
+    --primary-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    --primary-font-size: 14px;
+    --logo-font-size: 26px;
+    --logo-font-weight: 700;
+    --logo-letter-spacing: 0.78px;
+    --small-letter-spacing: 0.48px;
+    --main-color: #212121;
+    --support-color: #2196f3;
+    --text-color: #757575;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: var(--primary-font-size);
+}
+
+.site-header{
+    background-color: var(--main-bg);
+}
