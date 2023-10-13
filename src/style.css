@@ -108,3 +108,67 @@ address {
 .address-map {
     color: #ffffff;
 }
+
+.hidden-title {
+    position: absolute;
+    left: -1000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.intro {
+    background-color: #2f303a;
+}
+
+.intro-title {
+    color: #ffffff;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+}
+
+.intro-btn:hover,
+.intro-btn:focus {
+    background-color: #188ce8;
+}
+
+.feature-title {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: inherit;
+    letter-spacing: 0.42px;
+}
+
+.feature-desc {
+    color: var(--text-color);
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}
+
+.section-title {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 36px;
+    font-style: inherit;
+    letter-spacing: 1.08px;
+}
+
+.team-name,
+.team-name {
+    color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: var(--small-letter-spacing);
+}
+
+.team-role {
+    font-size: 16px;
+    letter-spacing: var(--small-letter-spacing);
+    color: var(--text-color);
+}
