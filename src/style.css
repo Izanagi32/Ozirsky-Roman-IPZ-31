@@ -177,6 +177,7 @@ address {
     font-style: inherit;
     letter-spacing: 1.08px;
     background-color: #f5f4fa;
+    text-align: center;
 }
 
 .team-name {
@@ -204,4 +205,5 @@ address {
     font-size: 36px;
     font-style: inherit;
     letter-spacing: 1.08px;
+    text-align: center;
 }
