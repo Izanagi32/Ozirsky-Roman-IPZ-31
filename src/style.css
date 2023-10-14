@@ -176,18 +176,32 @@ address {
     font-size: 36px;
     font-style: inherit;
     letter-spacing: 1.08px;
+    background-color: #f5f4fa;
 }
 
-.team-name,
 .team-name {
     color: #212121;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: var(--small-letter-spacing);
+    text-align: center;
 }
 
 .team-role {
     font-size: 16px;
     letter-spacing: var(--small-letter-spacing);
     color: var(--text-color);
+    text-align: center;
+}
+
+.team {
+    background-color: #f5f4fa;
+}
+
+.section-namer {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 36px;
+    font-style: inherit;
+    letter-spacing: 1.08px;
 }
