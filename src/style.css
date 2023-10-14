@@ -38,7 +38,7 @@ body {
 .brand:hover,
 .brand:focus {
     color: black;
-    color: pointer;
+    cursor: pointer;
 }
 
 .contact-link {
@@ -48,7 +48,14 @@ body {
     letter-spacing: 0.28px;
 }
 
-.acrive-link {
+.nav-item {
+    color: var(--main-color);
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.active-link {
     color: var(--support-color);
 }
 
@@ -59,6 +66,7 @@ button {
     transition: background-color 300ms;
     line-height: inherit;
     font-size: inherit;
+    font-family: inherit;
 }
 
 a {
@@ -96,7 +104,7 @@ address {
 }
 
 .address-link {
-    color: rqba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -130,6 +138,17 @@ address {
     line-height: 1.36;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+}
+
+.intro-btn {
+    color: #ffffff;
+    background-color: var(--support-color);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .intro-btn:hover,
