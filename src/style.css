@@ -207,3 +207,34 @@ address {
     letter-spacing: 1.08px;
     text-align: center;
 }
+
+.portfolio-title {
+    line-height: 2;
+    letter-spacing: 1.08px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.portfolio-category {
+    line-height: 1.87;
+    letter-spacing: 0.48px;
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.filter-btn {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: var(--small-letter-spacing);
+    font-family: inherit;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--main-bg);
+    background-color: var(--support-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
