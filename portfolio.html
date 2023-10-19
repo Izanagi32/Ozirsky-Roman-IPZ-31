@@ -10,21 +10,118 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="src/style.css">
 </head>
+
 <body>
-    <header>
-        <a href="#" class="logo"><span class="custom-logo-text">Web</span>Studio</a>
-        <nav>
+    <header class="site-header">
+        <a class="brand logo" href="index.html"><span class="accent">Web</span>Studio</a>
+        <nav class="navigation">
             <ul class="nav-list">
-                <li><a class="nav-list-item" href="index.html">Студія</a></li>
-                <li><a class="nav-list-item" href="portfolio.html">Портфоліо</a></li>
-                <li><a class="nav-list-item" href="#">Контакти</a></li>
+                <li><a href="index.html">Студія</a></li>
+                <li><a href="portfolio.html">Портфоліо</a></li>
+                <li><a href="#">Контакти</a></li>
             </ul>
         </nav>
-        <ul>
+        <ul class="contact-info">
             <li><a href="mailto:info@devstudio.com" title="info@devstudio.com">info@devstudio.com</a></li>
             <li><a href="tel:+380961111111">+380961111111</a></li>
         </ul>
     </header>
+
+    <main class="main">
+        <section class="portfolio-controls">
+            <ul class="filters">
+                <li><button class="filter-btn">Усі</button></li>
+                <li><button class="filter-btn">Веб-сайти</button></li>
+                <li><button class="filter-btn">Додатки</button></li>
+                <li><button class="filter-btn">Дизайн</button></li>
+                <li><button class="filter-btn">Маркетинг</button></li>
+            </ul>
+        </section>
+        <section class="portfolio-gallery">
+            <div class="portfolio_item">
+                <a href="#" class="portfolio-thumb">
+                    <img src="images/imgp1.jpg" alt="Зображення ноутбука" width="270">
+                </a>
+                <h3 class="portfolio-title">Технокряк</h3>
+                <p class="portfolio-category">Веб-сайт</p>
+            </div>
+
+            <div class="portfolio_item">
+                <a href="#" class="portfolio-thumb">
+                    <img src="images/imgp2.jpg" alt="Зображення баскетболу" width="270">
+                </a>
+                <h3 class="portfolio-title">Постер New Orlean vs Golden Star</h3>
+                <p class="portfolio-category">Дизайн</p>
+            </div>
+
+            <div class="portfolio_item">
+                <a href="#" class="portfolio-thumb">
+                    <img src="images/imgp3.jpg" alt="Seafood зображення ресторану" width="270">
+                </a>
+                <h3 class="portfolio-title">Ресторан Seafood</h3>
+                <p class="portfolio-category">Додаток</p>
+            </div>
+
+            <div class="portfolio_item">
+                <a href="#" class="portfolio-thumb">
+                    <img src="images/imgp4.jpg" alt="Навушники" width="270">
+                </a>
+                <h3 class="portfolio-title">Проєкт Prime</h3>
+                <p class="portfolio-category">Маркетинг</p>
+            </div>
+
+            <div class="portfolio_item">
+                <a href="#" class="portfolio-thumb">
+                    <img src="images/imgp5.jpg" alt="Коробки" width="270">
+                </a>
+                <h3 class="portfolio-title">Проєкт Boxes</h3>
+                <p class="portfolio-category">Додаток</p>
+            </div>
+
+            <div class="portfolio_item">
+                <a href="#" class="portfolio-thumb">
+                    <img src="images/imgp6.jpg" alt="Зображення монітора статистики" width="270">
+                </a>
+                <h3 class="portfolio-title">Inspiration has no Borders</h3>
+                <p class="portfolio-category">Веб-сайт</p>
+            </div>
+
+            <div class="portfolio_item">
+                <a href="#" class="portfolio-thumb">
+                    <img src="images/imgp7.jpg" alt="Журнал видання" width="270">
+                </a>
+                <h3 class="portfolio-title">Видання Limited Edition</h3>
+                <p class="portfolio-category">Дизайн</p>
+            </div>
+
+            <div class="portfolio_item">
+                <a href="#" class="portfolio-thumb">
+                    <img src="images/imgp8.jpg" alt="Lab tag" width="270">
+                </a>
+                <h3 class="portfolio-title">Проєкт LAB</h3>
+                <p class="portfolio-category">Маркетинг</p>
+            </div>
+
+            <div class="portfolio_item">
+                <a href="#" class="portfolio-thumb">
+                    <img src="images/imgp9.jpg" alt="Ноутбук" width="270">
+                </a>
+                <h3 class="portfolio-title">Growing Business</h3>
+                <p class="portfolio-category">Додаток</p>
+            </div>
+        </section>
+    </main>
     
+    <footer class="site-footer">
+        <a class="brand logo-footer" href="index.html"><span class="accent">Web</span>Studio</a>
+        <address class="footer-address">
+          <ul class="address-list">
+            <li><a class="address-link address-map" href="https://goo.gl/maps/zXnRZzUKmTX4V4ny9" target="_blank"
+                rel="noreferrer nofollow">м.Київ, пр-т Лесі Українки, 26</a></li>
+            <li><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="address-link" href="tel:+38096111111">+380961111111</a></li>
+          </ul>
+        </address>
+    </footer>
 </body>
 </html>
