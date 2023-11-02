@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap);
+
 :root {
     --main-bg: #ffffff;
     --primary-font: "Roboto", sans-serif;
@@ -30,12 +32,17 @@ header {
     border: 1px #ECECEC solid;
 }
 
-.site-header .container {
+.site-header .header-cont {
     background-color: var(--main-bg);
     font-weight: 500;
     color: #212121;
     display: flex;
     align-items: center;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
@@ -77,6 +84,7 @@ header {
     gap: 40px;
     margin-left: auto;
     padding: 32px 0;
+    color: #757575;
 }
 
 .nav-list {
@@ -105,12 +113,16 @@ header {
 }
 
 button {
-    border-radius: 4px;
     cursor: pointer;
     transition: background-color 300ms;
     line-height: inherit;
     font-size: inherit;
     font-family: inherit;
+    border-radius: 4px;
+}
+
+section {
+    padding: 94px 0;
 }
 
 a {
@@ -129,22 +141,47 @@ a:focus {
 
 ul {
     list-style: none;
+    font-size: var(--primary-font-size);
+    margin: 0;
+    padding: 0;
 }
 
 .site-footer {
     background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-footer {
     color: #ffffff;
+    font-size: 26px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    letter-spacing: var(--logo-letter-spacing);
+    word-wrap: break-word;
+    text-decoration: none;
 }
 
 .logo-footer:hover {
     color: #ffffff;
 }
 
+.footer-address {
+    margin-top: 28px;
+}
+
 address {
     text-decoration: none;
+}
+
+.address-map {
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.42px;
+    word-wrap: break-word;
+    text-decoration: none;
+    font-style: normal;
 }
 
 .address-link {
@@ -155,6 +192,28 @@ address {
     font-weight: 400;
     line-height: 1.14;
     letter-spacing: 0.42px;
+}
+
+.address-link-email {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    margin-bottom: 12px;
+}
+
+.address-link-tell {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    margin: 0 0 12px;
 }
 
 .visually-hidden {
@@ -185,16 +244,24 @@ address {
 
 .intro {
     background-color: #2f303a;
+    height: 600px;
+    display: flex;
+    align-items: center;
 }
 
 .intro-title {
     color: #ffffff;
     text-align: center;
     font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
+    font-weight: 700;
+    line-height: 60px;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    max-width: 696px;
+    text-align: center;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+    font-family: "Roboto", sans-serif;
 }
 
 .intro-btn {
@@ -202,15 +269,31 @@ address {
     background-color: var(--support-color);
     font-family: var(--primary-font);
     font-size: 16px;
-    font-weight: 700;
     line-height: 1.87;
-    letter-spacing: 0.96px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 300ms;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .intro-btn:hover,
 .intro-btn:focus {
     background-color: #188ce8;
+
+}
+
+.features {
+    padding-bottom: 0;
+}
+
+.feature-list {
+    display: flex;
 }
 
 .feature-title {
@@ -219,12 +302,31 @@ address {
     font-weight: 700;
     font-size: inherit;
     letter-spacing: 0.42px;
+    margin-bottom: 10px;
+}
+
+.feature-name {
+    margin-left: 30px;
 }
 
 .feature-desc {
     color: var(--text-color);
-    line-height: 1.71;
+    line-height: 24px;
     letter-spacing: 0.42px;
+    font-size: 14px;
+    text-transform: none;
+
+
+}
+
+.ativity-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.ativity-list-item {
+    margin-left: 30px;
 }
 
 .section-title {
@@ -237,12 +339,35 @@ address {
     text-align: center;
 }
 
+.team-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.team-list-item {
+    margin-left: 30px;
+    background: white;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 370px;
+    background-color: white;
+}
+
 .team-name {
     color: #212121;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: var(--small-letter-spacing);
     text-align: center;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.card-list {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-role {
@@ -273,6 +398,27 @@ address {
     padding-inline-start: 40px;
 }
 
+.portfolio-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px
+}
+
+.portfolio_item {
+    display: inline-block;
+    background-color: var(--background-color);
+    border: 1px #EEEEEE solid;
+    max-width: 370px;
+}
+
+.portfolio-card-item {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .portfolio-title {
     line-height: 2;
     letter-spacing: 1.08px;
@@ -286,6 +432,14 @@ address {
     letter-spacing: 0.48px;
     font-size: 16px;
     color: var(--secondary-color);
+}
+
+.filters {
+    margin-top: 94px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
 }
 
 .filter-btn {
