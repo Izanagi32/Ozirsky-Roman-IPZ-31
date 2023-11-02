@@ -451,6 +451,14 @@ address {
     letter-spacing: var(--small-letter-spacing);
     font-family: inherit;
     background-color: #f5f4fA;
+    word-wrap: break-word;
+    display: block;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: white;
 }
 
 .filter-btn:hover,
