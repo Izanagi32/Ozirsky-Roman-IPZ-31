@@ -79,6 +79,10 @@ header {
     letter-spacing: 0.28px;
 }
 
+.active-page {
+    color: #2196F3;
+}
+
 .contact-info {
     display: flex;
     gap: 40px;
@@ -194,6 +198,10 @@ address {
     letter-spacing: 0.42px;
 }
 
+.list-address {
+margin-bottom: 12px;
+}
+
 .address-link-email {
     color: rgba(255, 255, 255, 0.6);
     font-family: Roboto;
@@ -306,8 +314,9 @@ address {
     margin-bottom: 10px;
 }
 
-.feature-name {
+.feature-name:not(:first-child) {
     margin-left: 30px;
+    max-width: 270px;
 }
 
 .feature-desc {
@@ -354,6 +363,7 @@ address {
     border-top-right-radius: 4px;
     height: 370px;
     background-color: white;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -410,7 +420,7 @@ address {
     display: inline-block;
     background-color: var(--background-color);
     border: 1px #EEEEEE solid;
-    max-width: 350px;
+    max-width: 370px;
 }
 
 .portfolio-card-item {
@@ -421,22 +431,24 @@ address {
 }
 
 .portfolio-title {
-    line-height: 2;
+    line-height: 36px;
     letter-spacing: 1.08px;
-    color: var(--primary-color);
+    color: #212121;
     font-weight: 700;
     font-size: 18px;
+    font-family: var(--primary-font);
 }
 
 .portfolio-category {
-    line-height: 1.87;
+    line-height: 30px;
     letter-spacing: 0.48px;
     font-size: 16px;
-    color: var(--secondary-color);
+    color: #757575;
+    font-weight: 400;
+    font-family: var(--primary-font);
 }
 
 .filters {
-    margin-top: 94px;
     display: flex;
     justify-content: center;
     gap: 8px;
