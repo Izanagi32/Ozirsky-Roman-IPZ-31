@@ -198,8 +198,8 @@ address {
     letter-spacing: 0.42px;
 }
 
-.list-address {
-margin-bottom: 12px;
+.list-address:not(:last-child) {
+    margin-bottom: 12px;
 }
 
 .address-link-email {
@@ -319,6 +319,10 @@ margin-bottom: 12px;
     max-width: 270px;
 }
 
+.feature-name {
+    max-width: 270px;
+}
+
 .feature-desc {
     color: var(--text-color);
     line-height: 24px;
@@ -335,7 +339,7 @@ margin-bottom: 12px;
     margin-top: 50px;
 }
 
-.ativity-list-item {
+.ativity-list-item:not(:first-child) {
     margin-left: 30px;
 }
 
@@ -446,6 +450,10 @@ margin-bottom: 12px;
     color: #757575;
     font-weight: 400;
     font-family: var(--primary-font);
+}
+
+.potrfolio-thumb {
+    display: inline-block;
 }
 
 .filters {
