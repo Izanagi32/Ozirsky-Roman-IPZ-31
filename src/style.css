@@ -488,3 +488,29 @@ address {
     background-color: var(--support-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
+
+.customer-title {
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    font-weight: 700;
+    word-wrap: break-word;
+    color: var(--main-color);
+}
+
+.customer-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.customer-list-item {
+    display: flex;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+}
