@@ -255,7 +255,7 @@ address {
     height: 600px;
     display: flex;
     align-items: center;
-    background: linear-gradient
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/images/hero.png);
 }
 
 .intro-title {
