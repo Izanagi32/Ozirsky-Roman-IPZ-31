@@ -610,3 +610,18 @@ address {
     height: 20px;
     fill: #afb1b8;
 }
+
+.feature-name-ph {
+    background: #f5f4fa;
+    display: inline-block;
+    width: 100%;
+    height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.feature-photo {
+    width: 70px;
+    height: 70px;
+}
