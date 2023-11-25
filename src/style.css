@@ -255,7 +255,7 @@ address {
     height: 600px;
     display: flex;
     align-items: center;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/images/hero.png);
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../images/hero.png);
 }
 
 .intro-title {
@@ -520,30 +520,26 @@ address {
     align-items: center;
     width: 100%;
     height: 100%;
-    fill: none;
+    fill: #AFB1B8;
     transition: border-color 0.3s;
 }
 
 .customer-svg {
     width: 106px;
     height: 60px;
-    fill: none;
     transition: fill 0.3s ease;
     position: relative;
 }
 
-.customer-svg:hover {
-    fill: #2196F3;
-}
 
 .customer-list-item a:hover, 
 .customer-list-item a:focus {
-    border-color: blue;
+    border-color: #2196F3;
 }
 
 .customer-list-item a:hover .customer-svg,
 .customer-list-item a:focus .customer-svg  {
-    fill: blue;
+    fill: #2196F3;
 }
 
 .footer-container {
@@ -590,6 +586,11 @@ address {
     cursor: pointer;
 }
 
+.team-join a:hover,
+.team-info a:focus {
+    background-color: #2196F3;
+}
+
 .team-join-link {
     width: 20px;
     height: 20px;
@@ -610,22 +611,20 @@ address {
     border-radius: 50%;
     padding: 12px 12px;
     transition: color 0,3s ease;
+    fill: #afb1b8;
 }
 
-.card-team-link:hover {
-    background-color: var(--support-color);
+.card-team-link a:hover,
+.card-team-link a:focus {
+    background-color: #2196F3;
     border-radius: 50%;
+    fill: #fff
 }
 
 .card-link-b {
     width: 20px;
     height: 20px;
-    fill: #afb1b8;
     transition: fill 0,3s;
-}
-
-.card-link-b:hover {
-    fill: #fff;
 }
 
 .feature-name-ph {
@@ -641,4 +640,16 @@ address {
 .feature-photo {
     width: 70px;
     height: 70px;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 40px; 
 }
