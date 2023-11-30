@@ -32,17 +32,24 @@ header {
     border: 1px #ECECEC solid;
 }
 
-.site-header .header-cont {
+.site-header {
+    border-bottom: 1px solid #ECECEC;
+    height: 80px;
+}
+
+.header-cont {
     background-color: var(--main-bg);
     font-weight: 500;
     color: #212121;
     display: flex;
     align-items: center;
+    flex-direction: row;
     max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    height: 80px;
 }
 
 .container {
@@ -85,15 +92,27 @@ header {
 
 .contact-info {
     display: flex;
-    gap: 40px;
+    column-gap: 40px;
     margin-left: auto;
-    padding: 32px 0;
     color: #757575;
+    justify-content: space-between;
+}
+
+.nav-info-text {
+    display: inline-block;
+}
+
+.iconsvg-nav {
+    fill: #757575;
+    transition: fill 300ms ease-in-out;
+    width: 16px;
+    height: 12px;
 }
 
 .nav-list {
     display: flex;
     gap: 50px;
+    justify-content: space-between;
 }
 
 .nav-list a {
@@ -645,6 +664,7 @@ address {
 .mail {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .phone {
