@@ -667,7 +667,16 @@ address {
     display: flex;
     align-items: center;
     gap: 10px;
+    fill: #757575;
+    transition: fill 300ms ease-in-out;
 }
+
+.mail:hover svg,
+.mail:focus svg {
+    fill: #2196F3;
+}
+
+
 
 .phone {
     display: flex;
