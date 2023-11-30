@@ -255,6 +255,7 @@ address {
     height: 600px;
     display: flex;
     align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../images/hero.png);
 }
 
 .intro-title {
@@ -365,7 +366,7 @@ address {
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    height: 370px;
+    height: auto;
     background-color: white;
     border-radius: 0px 0px 4px 4px;
 }
@@ -381,8 +382,7 @@ address {
 }
 
 .card-list {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 
 .team-role {
@@ -390,6 +390,7 @@ address {
     letter-spacing: var(--small-letter-spacing);
     color: var(--text-color);
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .team {
@@ -487,4 +488,168 @@ address {
     color: var(--main-bg);
     background-color: var(--support-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.customer-title {
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    font-weight: 700;
+    word-wrap: break-word;
+    color: var(--main-color);
+}
+
+.customer-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.customer-list-item {
+    width: 170px;
+    height: 92px;
+}
+
+.customer-effect {
+    display: flex;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    fill: #AFB1B8;
+    transition: border-color 0.3s;
+}
+
+.customer-svg {
+    width: 106px;
+    height: 60px;
+    transition: fill 0.3s ease;
+    position: relative;
+}
+
+
+.customer-list-item a:hover, 
+.customer-list-item a:focus {
+    border-color: #2196F3;
+}
+
+.customer-list-item a:hover .customer-svg,
+.customer-list-item a:focus .customer-svg  {
+    fill: #2196F3;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    gap: 94px;
+}
+
+.cont-footer {
+    margin-left: 174px;
+}
+
+.contact-team {
+    max-width: 206px;
+    max-height: 80px;
+}
+
+.contact-title {
+    color: var(--main-bg);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.team-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-join a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: #ffffff1a;
+    border-radius: 50%;
+    color: #fff;
+    transition: background 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.team-join a:hover,
+.team-info a:focus {
+    background-color: #2196F3;
+}
+
+.team-join-link {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+
+.card-link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-team-link a {
+    width: 44px;
+    height: 44px;
+    transition: 300ms;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 12px 12px;
+    transition: color 0,3s ease;
+    fill: #afb1b8;
+}
+
+.card-team-link a:hover,
+.card-team-link a:focus {
+    background-color: #2196F3;
+    border-radius: 50%;
+    fill: #fff
+}
+
+.card-link-b {
+    width: 20px;
+    height: 20px;
+    transition: fill 0,3s;
+}
+
+.feature-name-ph {
+    background: #f5f4fa;
+    display: inline-block;
+    width: 100%;
+    height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.feature-photo {
+    width: 70px;
+    height: 70px;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 40px; 
 }
