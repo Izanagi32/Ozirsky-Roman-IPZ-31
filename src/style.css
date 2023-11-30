@@ -38,7 +38,6 @@ header {
 }
 
 .header-cont {
-    background-color: var(--main-bg);
     font-weight: 500;
     color: #212121;
     display: flex;
@@ -672,4 +671,39 @@ address {
     align-items: center;
     gap: 10px;
     margin-right: 40px; 
+}
+
+.position-text {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-element {
+    transition: transform 250ms ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(101%);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+}
+
+.element-text {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    padding: 63px 24px;
+}
+
+.portfolio_item:hover,
+.portfolio_item:focus{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio_item:hover .text-element {
+    transform: translateY(0);
 }
