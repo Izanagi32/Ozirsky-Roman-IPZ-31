@@ -365,6 +365,10 @@ address {
     margin-left: 30px;
 }
 
+.ativity-list-item {
+    position: relative;
+}
+
 .section-title {
     color: var(--main-color);
     font-weight: 700;
@@ -779,4 +783,19 @@ address {
 .close-box {
     opacity: 0;
     pointer-events: none;
+}
+
+.text-ativity-take {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    padding: 27px 0;
+    color: #fff;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
