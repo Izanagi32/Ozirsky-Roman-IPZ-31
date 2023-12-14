@@ -19,6 +19,10 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+}
+
 body {
     font-family: var(--primary-font);
     font-style: normal;
@@ -675,8 +679,31 @@ address {
     transition: fill 300ms ease-in-out;
 }
 
+.mail-tel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    fill: #757575;
+    transition: fill 300ms ease-in-out;
+}
+
+.mail svg {
+    width: 16px;
+    height: 13px;
+}
+
+.mail-tel svg {
+    width: 10px;
+    height: 17px;
+}
+
 .mail:hover svg,
 .mail:focus svg {
+    fill: #2196F3;
+}
+
+.mail-tel:hover svg,
+.mail-tel:focus svg {
     fill: #2196F3;
 }
 
@@ -703,6 +730,9 @@ address {
     height: 100%;
     width: 100%;
     background-color: rgba(33, 150, 243, 0.9);
+    padding: 24px;
+    align-items: center;
+    display: flex;
 }
 
 .element-text {
@@ -710,7 +740,6 @@ address {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.54px;
-    padding: 63px 24px;
 }
 
 .portfolio_item:hover,
@@ -731,7 +760,7 @@ address {
     position: absolute;
     height: 4px;
     left: 0;
-    bottom: 0px;
+    bottom: 1px;
     width: 100%;
 }
 
