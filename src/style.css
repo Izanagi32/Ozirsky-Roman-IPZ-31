@@ -801,10 +801,11 @@ address {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
     background-color: #fff;
     border-radius: 4px;
     width: 528px;
-    height: 581px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .close-box {
@@ -881,6 +882,74 @@ address {
     gap: 10px;
 }
 
+.text-modal {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+}
 
+.form-input-modal {
+    margin-top: 12px;
+}
 
+.modal-text {
+    position: relative;
+    color: var(--gray-color);
+    font-size: 12px;
+    letter-spacing: 0.12px;
+}
 
+.input-modal-text {
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 1px solid rgba(33, 33, 33, 0.20);
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    padding: 11px 0 12px 42px;
+    width: 100%;
+    margin-top: 4px;
+    color: var(--black-color);
+    background-color: #fff;
+}
+
+.icon-form {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--black-color);
+    position: absolute;
+    top: 31px;
+    left: 10px;
+}
+
+.btt {
+    display: block;
+    align-self: center;
+    color: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #2196F3;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    letter-spacing: 0.96px;
+    line-height: 1.875;
+    padding: 10px 52px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.modal-coment {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+}
+
+.done-svg {
+    transition: fill 250ms, background-color 250ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--black-color);
+    border-radius: 2px;
+    margin-right: 7px;
+    fill: none;
+    margin-bottom: 3px;
+    vertical-align: middle;
+}
