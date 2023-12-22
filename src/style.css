@@ -894,7 +894,7 @@ address {
 
 .modal-text {
     position: relative;
-    color: var(--gray-color);
+    color: rgba(117, 117, 117, 1);
     font-size: 12px;
     letter-spacing: 0.12px;
 }
@@ -903,21 +903,35 @@ address {
     transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: 1px solid rgba(33, 33, 33, 0.20);
     border-radius: 4px;
-    font-size: 16px;
     border: 1px solid rgba(33, 33, 33, 0.20);
-    padding: 11px 0 12px 42px;
+    padding: 12px 16px;
     width: 100%;
     margin-top: 4px;
     color: var(--black-color);
     background-color: #fff;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    padding-left: 40px; 
+}
+
+.input-modal-text:focus {
+    outline: none;
+    border: 1px solid #2196F3;
 }
 
 .icon-form {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: var(--black-color);
+    fill: black;
     position: absolute;
     top: 31px;
     left: 10px;
+}
+
+.modal-text:focus-within svg, 
+.modal-text:hover svg {  
+    fill: #2196F3;
 }
 
 .btt {
@@ -934,12 +948,14 @@ address {
     padding: 10px 52px;
     margin-left: auto;
     margin-right: auto; 
+    border: none;
+    margin-top: 30px;
 }
 
 .modal-coment {
     height: 120px;
-    padding: 12px 16px;
     resize: none;
+    color: rgba(117, 117, 117, 1);
 }
 
 .done-svg {
@@ -952,4 +968,11 @@ address {
     fill: none;
     margin-bottom: 3px;
     vertical-align: middle;
+}
+
+textarea {
+    height: 120px;
+}
+
+.modal_label_check {
 }
