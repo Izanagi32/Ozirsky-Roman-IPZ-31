@@ -794,6 +794,8 @@ address {
     fill: var(--primary-color);
     width: 18px;
     height: 18px;
+    margin-top: 3px;
+    margin-left: 3px;
 }
 
 .modal {
@@ -965,14 +967,64 @@ address {
     border: 2px solid var(--black-color);
     border-radius: 2px;
     margin-right: 7px;
-    fill: none;
     margin-bottom: 3px;
     vertical-align: middle;
+}
+
+.done-svg:active,
+.done-svg:focus {
+    fill: #188ce8;
+    border: none;
 }
 
 textarea {
     height: 120px;
 }
 
-.modal_label_check {
+.modal-info {
+    display: none;
 }
+
+.modal_label_check {
+    color: #757575;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+.modal_label_check{
+    color: #757575;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .done-svg {
+    cursor: pointer;
+    fill: transparent; 
+    border: 2px solid #000;
+    border-radius: 4px;
+  }
+  
+  .modal-info:checked + .done-svg {
+    fill: #120fd4;
+    background-color: #188ce8;
+    stroke: #ffffff;
+    stroke-width: 2; 
+    border: none;
+  }
