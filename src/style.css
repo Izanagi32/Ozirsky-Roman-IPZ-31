@@ -43,6 +43,14 @@ header {
     
 }
 
+@media (max-width: 1200px) {
+    .footer__team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
 
 @media (max-width: 720px) {
     .header__container {
@@ -205,6 +213,27 @@ header {
     letter-spacing: 0.36px;
   }
 
+  .footer__form  {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .features__photo-container {
+    background: #F5F4FA;
+    display: inline-block;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    height: 120px;
+    padding: 25px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+
 @media (max-width: 720px) {
     .contact {
       display: none;
@@ -236,6 +265,214 @@ header {
       padding: 9px 0;
     }
   }
+
+  @media (max-width: 720px) {
+    .header__contact-info  .header__contact-link {
+       display: none;
+     }
+   }
+
+   @media (min-width: 721px) and (max-width: 900px){
+    .header__contact-info {
+    display: flex;
+    margin-left: auto;
+    flex-wrap: wrap;
+    gap: 0px;
+    max-width: 160px;
+    }
+ }
+
+   @media (max-width: 1200px){
+    .portfolio {
+    display: none;
+    }
+}
+
+@media (max-width: 765px) {
+    .feature__list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: 765px) {
+    .features__item {
+      width: 354px;
+    }
+  }
+
+  @media (min-width: 765px) {
+    .features__title-secondary {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .team__list {
+      max-width: 738px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 765px) {
+    .team__item {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .team__item-img {
+      width: 450px;
+    }
+  }
+  @media (min-width: 765px) and (max-width: 1024px) {
+    .team__item-img {
+      width: 354px;
+      height: 374px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .regular-customers__container {
+      max-width: 738px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .regular-customers__item {
+      width: 210px;
+    }
+  }
+
+  @media (max-width: 1200px) and (min-width: 320px) {
+    .portfolio-card__item {
+      width: 354px;
+    }
+  }
+
+  @media (max-width: 765px) and (min-width: 320px) {
+    .portfolio-card__item {
+      width: 100%;
+      max-width: 450px;
+    }
+  }
+
+  @media (max-width: 765px) and (min-width: 320px) {
+    .portfolio-card__element-text {
+      width: 450px;
+      max-width: 450px;
+    }
+  }
+  @media (max-width: 765px) and (min-width: 320px) {
+    .portfolio-card__element-text img {
+      width: 100%;
+      max-width: 450px;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    .footer__container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    .footer__content {
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .footer__content {
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 1201px) {
+     .footer__address-item {
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .footer .footer__team {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  .footer__newsletter {
+    position: relative;
+  }
+
+  @media (max-width: 1200px) {
+    .footer .footer__newsletter {
+      align-items: center;
+      max-width: 450px;
+      display: flex;
+      flex-direction: column;
+        input {
+            margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .footer .footer__form {
+      flex-direction: column;
+    }
+  }
+  @media (min-width: 319px) and (max-width: 360px) {
+    .footer .footer__form input {
+      max-width: 300px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .modal {
+      position: relative;
+      top: 25%;
+      left: 25%;
+    }
+  }
+
+  @media (min-width: 765px) and (max-width: 1200px){
+  .feature__list {
+      width: 738px;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      align-content: center;
+  }
+}
+
+
+@media (min-width: 1201px) {
+    .footer__container {
+    display: flex;
+    flex-direction: row;
+    }
+ }
+
+ @media (min-width: 1201px) {
+    .footer__content {
+    align-items: flex-start;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer__content {
+    align-items: center;
+    }
+}
 
 
 .header__container {
@@ -537,15 +774,16 @@ address {
     font-size: inherit;
     letter-spacing: 0.42px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .features__item:not(:first-child) {
-    margin-left: 30px;
-    max-width: 270px;
+    width: 100%;
 }
 
 .features__item {
-    max-width: 270px;
+    width: 100%;
 }
 
 .features__desc {
@@ -586,6 +824,8 @@ address {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .team__item {
@@ -772,8 +1012,10 @@ address {
 
 .footer__container {
     display: flex;
-    align-items: baseline;
-    gap: 94px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
 }
 
 .footer__team {
@@ -815,6 +1057,7 @@ address {
     background-color: #2196F3;
 }
 
+
 .footer__icon {
     width: 20px;
     height: 20px;
@@ -849,16 +1092,6 @@ address {
     width: 20px;
     height: 20px;
     transition: fill 0,3s;
-}
-
-.features__photo-container {
-    background: #f5f4fa;
-    display: inline-block;
-    width: 100%;
-    height: 120px;
-    padding: 25px 100px;
-    margin-bottom: 30px;
-    border-radius: 4px;
 }
 
 .features__photo{
@@ -1053,16 +1286,23 @@ address {
   }
 
 .footer__button {
-    margin-left: 12px;
-    padding: 10px 28px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    letter-spacing: 0.96px;
-    color: #fff;
-    line-height: 1.875;
-    background-color:#2196F3;
     border-radius: 4px;
+    background: #2196F3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    padding: 10px 28px 10px 28px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .footer__button:focus,
